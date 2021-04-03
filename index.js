@@ -42,6 +42,7 @@ document.getElementById('generate').onclick = () => {
             name: getField('mod'),
             description: getField('description'),
             modder: getField('modder'),
+            version: getField('version')
         }
     }
     const files = [
