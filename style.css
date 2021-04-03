@@ -1,0 +1,162 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Inconsolata, monospace;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#choices {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.choice {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#choice-weapon {
+    background-color: #dd5555;
+    background-color: #dddddd;
+}
+
+#choice-spell {
+    background-color: #5555dd;
+}
+
+.settings {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.optionset {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+input {
+    font-family: Inconsolata, monospace;
+    font-size: 20px;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #999999;
+}
+
+label {
+    font-size: 20px;
+    color: #444444;
+}
+
+input[type=text]:hover {
+    border: 1px solid #555555;
+}
+
+input[type=text]:focus {
+    border: 1px solid #333333;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.optionset > hr {
+    grid-column: span 2;
+    width: 100%;
+    border: 1px solid #999999;
+}
+
+.generated {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.button {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #55bb55;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.output-headings {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.outputs pre {
+    word-wrap: break-word;
+}
+
+.outputs, .output-headings {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.outputs *, .output-headings * {
+    flex-grow: 1;
+}
+
+.outputs *:not(first-of-type) {
+    border-left: 1px solid #dddddd;
+    padding: 10px;
+}
+
+.help {
+    margin: auto;
+    width: 700px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.help h3 {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.help {
+    text-align: left;
+}
+
+.file-title {
+    font-weight: bold;
+}

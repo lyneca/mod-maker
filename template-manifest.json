@@ -1,0 +1,7 @@
+{
+  "Name": "{{:spell.name}}",
+  "Description": "{{:mod.description}}",
+  "Author": "{{:mod.modder}}",
+  "ModVersion": "1.0",
+  "GameVersion": "{{:mod.version}}"
+}

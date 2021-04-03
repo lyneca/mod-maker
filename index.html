@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css" media="all">
+        <link rel="stylesheet" href="checkbox.css" media="all">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.11/jsrender.min.js" integrity="sha512-bKlNlbTH3duwZ28zoqEhXui/yuaPuQVci6OAVu0zh2WfYbEKD39HszVR8byP4/L4YyBo3b5CGIY+4ldVN93uCg==" crossorigin="anonymous"></script>
+        <script src="zip.min.js"></script>
+    </head>
+    <body>
+        <!--
+        <h2>I am making a...</h2>
+        <div id="choices">
+            <div class="choice" id="choice-spell">Spell</div>
+            <div class="choice" id="choice-weapon">Weapon</div>
+        </div>
+        -->
+        <h2>Blade and Sorcery Spell Maker</h2>
+        <div class="settings">
+            <div class="optionset" id="settings-spell">
+                <label for="name">Modder Name</label><input type="text" id="modder" name="modder" placeholder="Lyneca">
+                <label for="name">Mod Name</label><input type="text" id="mod" name="mod" placeholder="Cosmic">
+                <label for="name">Mod Description</label><input type="text" id="description" name="description" placeholder="Create miniature black holes to attract objects and throw them around!">
+                <label for="name">Game Version</label><input type="text" id="version" name="version" placeholder="9.1">
+                <hr />
+                <label for="name">Spell Name</label><input type="text" id="spell" name="spell" placeholder="Cosmic">
+                <label for="name">Effect Addressable Path</label>
+                <div class="generated" id="addressable"></div>
+                <label for="name">Can spray? (e.g. lightning's spray)</label><label class="checkbox">
+                    <input type="checkbox" name="spray" id="spray">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="name">Can throw? (e.g. fire's throw)</label><label class="checkbox">
+                    <input type="checkbox" name="throw" id="throw">
+                    <span class="checkmark"></span>
+                </label>
+                <label for="name">Can imbue?</label>
+                <label class="checkbox">
+                    <input type="checkbox" name="imbue" id="imbue">
+                    <span class="checkmark"></span>
+                </label>
+                <hr />
+                <label for="name">Orb Inner Color</label><input type="color" id="spell" name="spell" placeholder="Cosmic">
+                <label for="name">Orb Outer Color</label><input type="color" id="spell" name="spell" placeholder="Cosmic">
+            </div>
+            <div class="optionset" id="settings-weapon" style="display: none">
+                <label for="name">Weapon Name</label><input type="text" name="name" placeholder="Cosmic">
+            </div>
+        </div>
+        <div class="button" id="generate">Generate</div>
+        <div class="help">
+            <h3>What are these files?</h3>
+            <div class="file-title">Spell_<span class="spell-name"></span>.json</div>
+            <div class="file-description">Spell JSON. Configure features of your spell such as throwing, spraying and imbuement, select charge effects, and link to your spell's DLL.</div>
+            <div class="file-title">Item_Spell_Spell<span class="spell-name"></span>.json</div>
+            <div class="file-description">Spell Item JSON. In B&amp;S, every spell has an associated 'spell item' which allows them to be placed in, for example, the player's inventory.</div>
+            <div class="file-title">Effect_Spell_SpellOrb<span class="spell-name"></span>.json</div>
+            <div class="file-description">Spell Orb Effect JSON. Configure how your spell appears in the spell wheel.</div>
+            <div class="file-title">Container_PlayerDefault.json</div>
+            <div class="file-description">Player inventory file. Required to allow the player to cast your spell.</div>
+            <div class="file-title">manifest.json</div>
+            <div class="file-description">Mod manifest. Required to register your mod, and contains metadata about your mod.</div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
+
+<!--
+
+    I am making a
+
+    Spell | Weapon
+
+    Spell Name
+    Merges
+    - with fire
+    - ...
+
+
+    Modder Name (e.g. lyneca)
+    Mod Name
+    Weapon Name
+
+-->
