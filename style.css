@@ -140,6 +140,17 @@ input[type=text]:focus {
     padding: 10px;
 }
 
+.not-implemented {
+    grid-column: span 2;
+    color: #999999;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.not-implemented label {
+    color: #999999;
+}
+
 .help {
     margin: auto;
     width: 700px;

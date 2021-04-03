@@ -57,10 +57,11 @@ document.getElementById('generate').onclick = () => {
             template: 'container',
             name: 'Container_PlayerDefault.json'
         },
-        {
-            template: 'orb',
-            name: `Effects/Effect_Spell_SpellOrb${data.spell.id}.json`
-        },
+        /* {
+         *     template: 'orb',
+         *     name: `Effects/Effect_Spell_SpellOrb${data.spell.id}.json`
+         * },
+         */
         {
             template: 'manifest',
             name: 'manifest.json'
