@@ -19,11 +19,13 @@
         <h2>Blade and Sorcery Spell Maker</h2>
         <div class="settings">
             <div class="optionset" id="settings-spell">
+                <h4>Mod Settings</h4>
                 <label for="name">Modder Name</label><input type="text" id="modder" name="modder" placeholder="Lyneca">
                 <label for="name">Mod Name</label><input type="text" id="mod" name="mod" placeholder="Cosmic">
                 <label for="name">Mod Description</label><input type="text" id="description" name="description" placeholder="Create miniature black holes to attract objects and throw them around!">
                 <label for="name">Game Version</label><input type="text" id="version" name="version" placeholder="9.1">
                 <hr />
+                <h4>Spell Settings</h4>
                 <label for="name">Spell Name</label><input type="text" id="spell" name="spell" placeholder="Cosmic">
                 <label for="name">Effect Addressable Path</label>
                 <div class="generated" id="addressable"></div>
@@ -42,8 +44,9 @@
                 </label>
                 <hr />
                 <div class="not-implemented">
-                    <label for="name">Orb Inner Color</label><input type="color" id="spell" name="spell" placeholder="Cosmic">
-                    <label for="name">Orb Outer Color</label><input type="color" id="spell" name="spell" placeholder="Cosmic">
+                    <h4>Spell Orb Settings</h4>
+                    <label for="name">Orb Inner Color</label><input disabled type="color" id="spell" name="spell" placeholder="Cosmic">
+                    <label for="name">Orb Outer Color</label><input disabled type="color" id="spell" name="spell" placeholder="Cosmic">
                 </div>
             </div>
             <div class="optionset" id="settings-weapon" style="display: none">

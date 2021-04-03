@@ -5,6 +5,10 @@ html, body {
     font-family: Inconsolata, monospace;
 }
 
+body {
+    padding-bottom: 50px;
+}
+
 h1, h2 {
     text-align: center;
 }
@@ -146,6 +150,9 @@ input[type=text]:focus {
     color: #999999;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-image: repeating-linear-gradient(45deg, #dcc, #dcc 30px, #eee 30px, #eee 60px);
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .not-implemented label {
@@ -171,4 +178,20 @@ input[type=text]:focus {
 
 .file-title {
     font-weight: bold;
+}
+
+.optionset h4 {
+    grid-column: span 2;
+    font-size: 40px;
+    padding: 0;
+    margin: 10px;
+    color: #999999;
+    font-style: italic;
+    text-align: center;
+}
+
+.not-implemented > h4:after {
+    content: " (WIP)";
+    font-size: 20px;
+    vertical-align: text-top;
 }
