@@ -142,6 +142,7 @@ input[type=text]:focus {
 
 .not-implemented {
     grid-column: span 2;
+    grid-gap: 5px;
     color: #999999;
     display: grid;
     grid-template-columns: 1fr 1fr;
