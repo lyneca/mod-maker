@@ -44,18 +44,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.outer_1.r}},
+              "g": {{:item_spell.orb.outer_1.g}},
+              "b": {{:item_spell.orb.outer_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.outer_2.r}},
+              "g": {{:item_spell.orb.outer_2.g}},
+              "b": {{:item_spell.orb.outer_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -77,18 +77,19 @@
       "mainGradientNoHdr": {
         "colorKeys": [
           {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+            "color": {
+              "r": {{:item_spell.orb.outer_1.r}},
+              "g": {{:item_spell.orb.outer_1.g}},
+              "b": {{:item_spell.orb.outer_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.outer_2.r}},
+              "g": {{:item_spell.orb.outer_2.g}},
+              "b": {{:item_spell.orb.outer_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -230,18 +231,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.inner_1.r}},
+              "g": {{:item_spell.orb.inner_1.g}},
+              "b": {{:item_spell.orb.inner_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.inner_2.r}},
+              "g": {{:item_spell.orb.inner_2.g}},
+              "b": {{:item_spell.orb.inner_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -264,18 +265,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.inner_1.r}},
+              "g": {{:item_spell.orb.inner_1.g}},
+              "b": {{:item_spell.orb.inner_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.inner_2.r}},
+              "g": {{:item_spell.orb.inner_2.g}},
+              "b": {{:item_spell.orb.inner_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -417,18 +418,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.secondary.red}},
-              "g": {{:orb.color.secondary.green}},
-              "b": {{:orb.color.secondary.blue}},
+              "r": {{:item_spell.orb.sphere_1.r}},
+              "g": {{:item_spell.orb.sphere_1.g}},
+              "b": {{:item_spell.orb.sphere_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.main.red}},
-              "g": {{:orb.color.main.green}},
-              "b": {{:orb.color.main.blue}},
+              "r": {{:item_spell.orb.sphere_2.r}},
+              "g": {{:item_spell.orb.sphere_2.g}},
+              "b": {{:item_spell.orb.sphere_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -451,18 +452,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.secondary.red}},
-              "g": {{:orb.color.secondary.green}},
-              "b": {{:orb.color.secondary.blue}},
+              "r": {{:item_spell.orb.sphere_1.r}},
+              "g": {{:item_spell.orb.sphere_1.g}},
+              "b": {{:item_spell.orb.sphere_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.secondary_light.red}},
-              "g": {{:orb.color.secondary_light.green}},
-              "b": {{:orb.color.secondary_light.blue}},
+              "r": {{:item_spell.orb.sphere_2.r}},
+              "g": {{:item_spell.orb.sphere_2.g}},
+              "b": {{:item_spell.orb.sphere_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -604,18 +605,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.tertiary.red}},
-              "g": {{:orb.color.tertiary.green}},
-              "b": {{:orb.color.tertiary.blue}},
+              "r": {{:item_spell.orb.rune_1.r}},
+              "g": {{:item_spell.orb.rune_1.g}},
+              "b": {{:item_spell.orb.rune_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.tertiary_light.red}},
-              "g": {{:orb.color.tertiary_light.green}},
-              "b": {{:orb.color.tertiary_light.blue}},
+              "r": {{:item_spell.orb.rune_2.r}},
+              "g": {{:item_spell.orb.rune_2.g}},
+              "b": {{:item_spell.orb.rune_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -638,18 +639,18 @@
         "colorKeys": [
           {
             "color": {
-              "r": {{:orb.color.tertiary.red}},
-              "g": {{:orb.color.tertiary.green}},
-              "b": {{:orb.color.tertiary.blue}},
+              "r": {{:item_spell.orb.rune_1.r}},
+              "g": {{:item_spell.orb.rune_1.g}},
+              "b": {{:item_spell.orb.rune_1.b}},
               "a": 1.0
             },
             "time": 0.0
           },
           {
             "color": {
-              "r": {{:orb.color.tertiary_light.red}},
-              "g": {{:orb.color.tertiary_light.green}},
-              "b": {{:orb.color.tertiary_light.blue}},
+              "r": {{:item_spell.orb.rune_2.r}},
+              "g": {{:item_spell.orb.rune_2.g}},
+              "b": {{:item_spell.orb.rune_2.b}},
               "a": 1.0
             },
             "time": 1.0
@@ -755,7 +756,7 @@
     },
     {
       "$type": "ThunderRoad.EffectModuleParticle, Assembly-CSharp",
-      "effectParticleAddress": "Bas.Particle.Spell.Fire.Orb",
+      "effectParticleAddress": "{{:item_spell.orb.particleAddress}}",
       "intensityCurve": null,
       "renderInLateUpdate": false,
       "goreParticle": false,
@@ -785,7 +786,7 @@
     {
       "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
       "effectLink": "Intensity",
-      "audioContainerAddress": "Bas.AudioGroup.Spell.Fire.Select",
+      "audioContainerAddress": "{{:item_spell.orb.selectSoundContainer}}",
       "loopFadeDelay": 0.0,
       "audioMixer": "UI",
       "volumeDb": 0.0,

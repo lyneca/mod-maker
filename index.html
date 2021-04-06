@@ -43,11 +43,55 @@
                     <span class="checkmark"></span>
                 </label>
                 <hr />
-                <div class="not-implemented">
-                    <h4>Spell Orb Settings</h4>
-                    <label for="name">Orb Inner Color</label><input disabled type="color" id="spell" name="spell" placeholder="Cosmic">
-                    <label for="name">Orb Outer Color</label><input disabled type="color" id="spell" name="spell" placeholder="Cosmic">
+                <h4>Spell Orb Settings</h4>
+                <div class="explanation">
+                    These gradients represent color over time - each part of the spell orb cycles from one color to the other.
                 </div>
+                <label for="name">Orb Inner Color</label>
+                <div class="color-selects">
+                    <input type="color" id="inner-1" name="inner-1" value='#ff0000'>
+                    <input type="color" id="inner-2" name="inner-2" value='#000000'>
+                </div>
+                <label for="name">Orb Outer Color</label>
+                <div class="color-selects">
+                    <input type="color" id="outer-1" name="outer-1" value='#0000ff'>
+                    <input type="color" id="outer-2" name="outer-2" value='#00ff00'>
+                </div>
+                <label for="name">Sphere Color</label>
+                <div class="color-selects">
+                    <input type="color" id="sphere-1" name="sphere-1" value='#FF5500'>
+                    <input type="color" id="sphere-2" name="sphere-2" value='#000000'>
+                </div>
+                <label for="name">Rune Color</label>
+                <div class="color-selects">
+                    <input type="color" id="rune-1" name="rune-1" value='#bb00dd'>
+                    <input type="color" id="rune-2" name="rune-2" value='#000000'>
+                </div>
+                <svg width="200" height="200" viewBox="-10 -10 410 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="195.5" cy="195.5" r="200" fill="url(#paint3_linear)" opacity="0.5"/>
+                    <circle cx="195.5" cy="195.5" r="180" stroke="url(#paint0_linear)" stroke-width="20"/>
+                    <circle cx="195.5" cy="195.5" r="150" stroke="url(#paint1_linear)" stroke-width="20"/>
+                    <path d="M171 77H194.626L272 121.84L260.187 142.49L194.626 104.14V141.31L272 186.74L260.187 206.8L194.626 169.04V313H171V77Z" fill="url(#paint2_linear)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear" x1="196.5" y1="-1" x2="195.5" y2="391" gradientUnits="userSpaceOnUse">
+                    <stop id='color-outer-1' stop-color="#FF0000"/>
+                    <stop id='color-outer-2' offset="1" stop-color="#000000"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear" x1="196.341" y1="30.1586" x2="195.5" y2="360" gradientUnits="userSpaceOnUse">
+                    <stop id='color-inner-1' stop-color="#1400FF"/>
+                    <stop id='color-inner-2' offset="1" stop-color="#00FF29"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear" x1="221.5" y1="77" x2="221.5" y2="313" gradientUnits="userSpaceOnUse">
+                    <stop id='color-rune-1' stop-color="#BD00FF"/>
+                    <stop id='color-rune-2' offset="1" stop-color="#000000"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear" x1="221.5" y1="77" x2="221.5" y2="313" gradientUnits="userSpaceOnUse">
+                    <stop id='color-sphere-1' stop-color="#BD00FF"/>
+                    <stop id='color-sphere-2' offset="1" stop-color="#000000"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+                <img src="orb.png" alt="A spell orb, with arrows pointing to the various parts of the orb" width=200px>
             </div>
             <div class="optionset" id="settings-weapon" style="display: none">
                 <label for="name">Weapon Name</label><input type="text" name="name" placeholder="Cosmic">

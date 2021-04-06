@@ -19,6 +19,23 @@ function updateSpellFields() {
     for (let item of document.getElementsByClassName("spell-name")) {
         item.innerHTML = camelCase(getField('spell'));
     }
+    updateOrbColors('inner');
+    updateOrbColors('outer');
+    updateOrbColors('sphere');
+    updateOrbColors('rune');
+}
+
+function updateOrbColors(color) {
+    getElement('color-' + color + '-1').setAttribute('stop-color', getField(color + '-1'));
+    getElement('color-' + color + '-2').setAttribute('stop-color', getField(color + '-2'));
+}
+
+function colorToComponents(color) {
+    return {
+        r: parseInt("0x" + color.substr(1, 2)) * 2 / 255,
+        g: parseInt("0x" + color.substr(3, 2)) * 2 / 255,
+        b: parseInt("0x" + color.substr(5, 2)) * 2 / 255,
+    }
 }
 
 document.getElementById('generate').onclick = () => {
@@ -26,7 +43,17 @@ document.getElementById('generate').onclick = () => {
         item_spell: {
             id: "Spell" + camelCase(getField('spell')),
             orb: {
-                id: "SpellOrb" + camelCase(getField('spell'))
+                id: "SpellOrb" + camelCase(getField('spell')),
+                outer_1: colorToComponents(getField('outer-1')),
+                outer_2: colorToComponents(getField('outer-2')),
+                inner_1: colorToComponents(getField('inner-1')),
+                inner_2: colorToComponents(getField('inner-2')),
+                sphere_1: colorToComponents(getField('sphere-1')),
+                sphere_2: colorToComponents(getField('sphere-2')),
+                rune_1: colorToComponents(getField('rune-1')),
+                rune_2: colorToComponents(getField('rune-2')),
+                particleAddress: "Placeholder.Particle.Address",
+                selectSoundContainer: "Placeholder.Sound.Container"
             }
         },
         spell: {
@@ -58,11 +85,11 @@ document.getElementById('generate').onclick = () => {
             template: 'container',
             name: 'Container_PlayerDefault.json'
         },
-        /* {
-         *     template: 'orb',
-         *     name: `Effects/Effect_Spell_SpellOrb${data.spell.id}.json`
-         * },
-         */
+        {
+            template: 'orb',
+            name: `Effects/Effect_Spell_SpellOrb${data.spell.id}.json`
+        },
+        
         {
             template: 'manifest',
             name: 'manifest.json'
@@ -82,8 +109,8 @@ function showTemplate(name, rendered) {
 }
 
 async function createFile(zipWriter, template, data, filename) {
-    const text = await renderTemplate(template, data);
     console.log(`Creating ${filename}`);
+    const text = await renderTemplate(template, data);
     await zipWriter.add(filename, new zip.TextReader(text));
 }
 

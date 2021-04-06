@@ -195,3 +195,14 @@ input[type=text]:focus {
     font-size: 20px;
     vertical-align: text-top;
 }
+
+.optionset svg, .not-implemented svg {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.explanation {
+    grid-column: span 2;
+    text-align: center;
+    margin: 10px 0;
+}
