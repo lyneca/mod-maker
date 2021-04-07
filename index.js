@@ -52,8 +52,9 @@ document.getElementById('generate').onclick = () => {
                 sphere_2: colorToComponents(getField('sphere-2')),
                 rune_1: colorToComponents(getField('rune-1')),
                 rune_2: colorToComponents(getField('rune-2')),
-                particleAddress: "Placeholder.Particle.Address",
-                selectSoundContainer: "Placeholder.Sound.Container"
+                rune: getField('rune-name-other') || getField('rune-name'),
+                particleAddress: getField('particle-address-other') || getField('particle-address'),
+                selectSoundContainer: getField('sound-address-other') || getField('sound-address'),
             }
         },
         spell: {

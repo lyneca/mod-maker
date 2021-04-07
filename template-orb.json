@@ -711,7 +711,7 @@
       "useRotationYCurve": false,
       "rotationYCurve": null,
       "rotationFadeDuration": 0.0,
-      "meshAddress": "Bas.Mesh.SpellWheel[o_rune]",
+      "meshAddress": "Bas.Mesh.SpellWheel[{{:item_spell.orb.rune}}]",
       "materials": [
         {
           "$type": "ThunderRoad.EffectModuleMesh+Materials+Material, Assembly-CSharp",

@@ -67,6 +67,37 @@
                     <input type="color" id="rune-1" name="rune-1" value='#bb00dd'>
                     <input type="color" id="rune-2" name="rune-2" value='#000000'>
                 </div>
+                <label for="particle-address">Particle Address</label>
+                <div class="select-other">
+                    <select id='particle-address'>
+                        <option value="Base.Particle.Spell.Fire.Orb">Fire</option>
+                        <option value="Base.Particle.Spell.Lightning.Orb">Lightning</option>
+                        <option value="Base.Particle.Spell.Gravity.Orb">Gravity</option>
+                    </select>
+                    or
+                    <input type="text" id="particle-address-other" name="particle-address-other" placeholder="custom address...">
+                </div>
+                <label for="particle-address">Select Sound</label>
+                <div class="select-other">
+                    <select id='sound-address'>
+                        <option value="Base.AudioGroup.Spell.Fire.Select">Fire</option>
+                        <option value="Base.AudioGroup.Spell.Lightning.Select">Lightning</option>
+                        <option value="Base.AudioGroup.Spell.Gravity.Select">Gravity</option>
+                    </select>
+                    or
+                    <input type="text" id="sound-address-other" name="sound-address-other" placeholder="custom address...">
+                </div>
+                <label for="rune">Rune</label>
+                <div class="select-other">
+                    <select id='rune-name'>
+                        <option value="o_rune_">Fire</option>
+                        <option value="o_rune_1">Lightning</option>
+                        <option value="o_rune_2">Gravity</option>
+                    </select>
+                    or
+                    <input type="text" id="rune-name-other" name="rune-name-other" placeholder="custom address...">
+                </div>
+
                 <svg width="200" height="200" viewBox="-10 -10 410 410" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="195.5" cy="195.5" r="200" fill="url(#paint3_linear)" opacity="0.5"/>
                     <circle cx="195.5" cy="195.5" r="180" stroke="url(#paint0_linear)" stroke-width="20"/>
