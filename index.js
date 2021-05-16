@@ -70,7 +70,8 @@ document.getElementById('generate').onclick = () => {
             name: getField('mod'),
             description: getField('description'),
             modder: getField('modder'),
-            version: getField('version')
+            version: getField('version'),
+            namespace: camelCase(getField('mod')),
         }
     }
     const files = [

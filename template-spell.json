@@ -1,7 +1,7 @@
 {
-  "$type": "{{:mod}}.{{:spell.id}}, {{:mod}}",
+  "$type": "{{:mod.namespace}}.{{:spell.id}}, {{:mod.namespace}}",
   "id": "{{:spell.id}}",
-  "saveFolder": "{{:mod}}",
+  "saveFolder": "{{:mod.namespace}}",
   "version": 0,
   "chargeEffectId": "{{:spell.charge_effect}}",
   "fingerEffectId": "{{:spell.finger_effect}}",
